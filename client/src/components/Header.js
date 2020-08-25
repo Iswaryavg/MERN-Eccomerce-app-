@@ -6,7 +6,7 @@ function Header() {
         MERN CRUD DEMO
       </a>
       <button
-        className="navbar-toggler"
+        className="navbar-toggler"      
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavAltMarkup"
@@ -18,11 +18,11 @@ function Header() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="ad">
+          <a className="nav-item nav-link active" href="/">
            Home<span class="sr-only">(current)</span>
           </a>
-          <a className="nav-item nav-link" href="ad">
-            Portfolio
+          <a className="nav-item nav-link" href="/Register">
+            signup
           </a>
           <a className="nav-item nav-link" href="ad">
             About
