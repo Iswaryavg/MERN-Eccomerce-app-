@@ -24,11 +24,11 @@ function Header() {
           <a className="nav-item nav-link" href="/Register">
             signup
           </a>
-          <a className="nav-item nav-link" href="ad">
-            About
+          <a className="nav-item nav-link" href="/products">
+            products
           </a>
-          <a className="nav-item nav-link" href="ad">
-            Contact
+          <a className="nav-item nav-link" href="/cart">
+            Cart
           </a>
         </div>
       </div>

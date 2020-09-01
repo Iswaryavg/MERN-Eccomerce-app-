@@ -11,7 +11,7 @@ function Login()
     <input type="password" placeholder="Enter Password" name="pwd" required />
 
         
-    <button type="submit">Login</button>
+    <button type="submit" className="btnaccount">Login</button>
   
   </div>
 
