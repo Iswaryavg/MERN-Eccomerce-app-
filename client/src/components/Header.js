@@ -19,7 +19,7 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
           <a className="nav-item nav-link active" href="/">
-           Home<span class="sr-only">(current)</span>
+           Home<span className="sr-only">(current)</span>
           </a>
           <a className="nav-item nav-link" href="/Register">
             signup
