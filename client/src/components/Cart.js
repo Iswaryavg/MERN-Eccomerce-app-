@@ -17,26 +17,37 @@ const result=(props.cartdata.find(x=>x.id==props.match.params.id))
           </div>
           <div className="cart-qty">
     <h1>{result.name}</h1>
-    <label for="cars">QTY</label>
-    <select id="numbers">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-    <button className="btn btn-danger">Remove</button>
+   
             </div>
     
             <div className="cartitem-price">
-            <h1>Price {result.price}</h1>
+  
     
               </div>
     </div>
         </div>
-    
           <div className="section2">
-                <h1>Subtotal</h1>
-                <button className="btn btn-lg btn-warning">Proceed to Checkout</button>
+               <p>Price: {result.price}</p>
+               <p>Status:{result.Numberofstock>0?"Instock":"Outofstock"}</p>                          
+               QTY: 
+     
+    {/* <select id="numbers">
+{foreach(var i in result.Numberofstock)}
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select> */}
+    <select>
+    {[...Array(result.Numberofstock).keys()].map((x) => (
+                      <option key={x + 1} value={x + 1}>
+                        {x + 1}
+                      </option>
+                    ))}
+    </select>
+
+                <br />
+                <button className="btn btn-lg btn-warning" disabled={result.Numberofstock == 0}>Add to Cart</button>
             </div>
       </div>
 }

@@ -5,7 +5,7 @@ const Data = [
       name: "stroller",
       price:"$5 ",
       Rating: "5 star",
-      Numberofstock:1
+      Numberofstock:2
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const Data = [
     {
       id: 5,
       img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "Stroller",
+      name: "product1",
       price:"$12",
       Rating: "5 star",
       Numberofstock:10
@@ -42,7 +42,7 @@ const Data = [
     {
       id: 6,
       img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "Stroller",
+      name: "product2",
       price:"$50",
       Rating: "5 star",
       Numberofstock:10
@@ -50,7 +50,7 @@ const Data = [
     {
       id: 7,
       img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "Stroller",
+      name: "product3",
       price:"$30",
       Rating: "5 star",
       Numberofstock:10
@@ -58,7 +58,7 @@ const Data = [
     {
       id: 8,
       img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "Stroller",
+      name: "product5",
       price:"$29",
       Rating: "5 star",
       Numberofstock:10
@@ -66,7 +66,7 @@ const Data = [
     {
       id: 9,
       img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "Stroller",
+      name: "product6",
       price:"$29",
       Rating: "5 star",
       Numberofstock:10
