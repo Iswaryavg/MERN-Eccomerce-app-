@@ -1,7 +1,7 @@
 import React from "react";
 function Register()
 {
-    return  <form>
+    return   <form  className="container" style={{textAlign:"center"}}>
 
 <div className="container">
 <h1>Register </h1>

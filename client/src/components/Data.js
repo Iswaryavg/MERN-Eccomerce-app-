@@ -25,48 +25,48 @@ const Data = [
     },
     {
       id: 4,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "Stroller",
+      img:"/images/food1.jpg" ,
+      name: "Puree",
       price:"$30",
       Rating: "5 star",
       Numberofstock:10
     },
     {
       id: 5,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "product1",
+      img:"/images/diaper2.jpg" ,
+      name: "diaper",
       price:"$12",
       Rating: "5 star",
       Numberofstock:10
     },
     {
       id: 6,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "product2",
+      img:"/images/toys1.jpg" ,
+      name: "toys",
       price:"$50",
       Rating: "5 star",
       Numberofstock:10
     },
     {
       id: 7,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "product3",
+      img:"/images/toys2.jpg" ,
+      name: "toys",
       price:"$30",
       Rating: "5 star",
       Numberofstock:10
     },
     {
       id: 8,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "product5",
+      img:"/images/bottle1.jpg" ,
+      name: "Bottles",
       price:"$29",
       Rating: "5 star",
       Numberofstock:10
     },
     {
       id: 9,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F01%2Fchicco-bravo-trio-travel-system-1-2000.jpg",
-      name: "product6",
+      img:"/images/food4.jpg" ,
+      name: "food",
       price:"$29",
       Rating: "5 star",
       Numberofstock:10

@@ -8,7 +8,7 @@ function Productpage(props)
  return <div><Search /><div className="products">
  {props.data.map(d=><div className="product">
  <Link to={'/cart/' +d.id}>
-      <img src={d.img} width="250px"  alt="" />
+      <img src={d.img} width="250px" className="productimg" alt="" />
       </Link>
      <div className="details">
             <h1>{d.name}</h1>

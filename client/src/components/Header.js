@@ -21,9 +21,7 @@ function Header() {
           <a className="nav-item nav-link active" href="/">
            Home<span className="sr-only">(current)</span>
           </a>
-          <a className="nav-item nav-link" href="/Register">
-            signup
-          </a>
+          
           <a className="nav-item nav-link" href="/products">
             products
           </a>
