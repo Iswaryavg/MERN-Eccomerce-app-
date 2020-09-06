@@ -8,8 +8,8 @@ import Productpage from "./components/Productpage"
 import Data from "../src/components/Data"
 import {BrowserRouter,Link,Route} from "react-router-dom"
 import "./App.css"
-import Search from "../src/components/Search"
-
+import Addtocart from "./components/Addtocart"
+import Payment from "./components/Payment"
 function App() {
   
   return (
@@ -23,6 +23,9 @@ function App() {
 <Route exact path="/cart/:id" component={(props)=><Cart {...props} cartdata={Data} />} /> 
 
 <Route exact path="/products" component={(props) => <Productpage {...props} data={Data} />} /> 
+
+<Route exact path="/Addtocart/:id" component={(props)=><Addtocart {...props} addtocart={Data} /> }/>
+<Route exact path="/Payment" component={(props)=><Payment {...props} placeorder={Data} /> }/>
  <Footer />
     </div>
     </BrowserRouter>

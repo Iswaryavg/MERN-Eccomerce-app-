@@ -1,7 +1,11 @@
 import React from "react";
 import {useState} from "react";
 import queryString from  "query-string";
-
+import {Link} from "react-router-dom"
+function handlecartitems()
+{
+  alert("clicked")
+}
 function Cart(props)
 {
   const [price,setprice]=useState(0)
@@ -20,9 +24,12 @@ const result=(props.cartdata.find(x=>x.id==props.match.params.id))
    
             </div>
     
-            <div className="cartitem-price">
-  
-    
+            <div className="cartitem-price">  
+    <p>   
+{result.name} </p>
+<p>{result.price}</p>
+<p>Description:Product is awesome,</p>
+   
               </div>
     </div>
         </div>
@@ -47,7 +54,9 @@ const result=(props.cartdata.find(x=>x.id==props.match.params.id))
     </select>
 
                 <br />
-                <button className="btn btn-lg btn-warning" disabled={result.Numberofstock == 0}>Add to Cart</button>
+                <Link to= {'/Addtocart/' +result.id}>               
+                <button className="btn btn-lg btn-warning" disabled={result.Numberofstock == 0} onClick={handlecartitems}>Add to Cart</button>
+                </Link>
             </div>
       </div>
 }
