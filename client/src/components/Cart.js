@@ -15,22 +15,30 @@ const result=(props.cartdata.find(x=>x.id==props.match.params.id))
   return <div className="cart-container">
   
       <div className="section1">
+      <div className="cart-row">
+        <span className="cart-item cart-header cart-column">ITEM</span>
+
+        <span className="cart-quantity cart-header cart-column">Description</span>
+    </div>
         <div className="cart-details">
         <div className="cart-img">
-          <img src={result.img} width="150px" alt="stroller" />
+          <img src={result.img} width="250px"  alt="stroller" />
           </div>
           <div className="cart-qty">
     <h1>{result.name}</h1>
-   
+    <p>Description:Product is awesome,</p>
+
+<p>{result.price}</p>   
             </div>
-    
+{/*     
             <div className="cartitem-price">  
     <p>   
 {result.name} </p>
-<p>{result.price}</p>
 <p>Description:Product is awesome,</p>
+
+<p>{result.price}</p>
    
-              </div>
+              </div> */}
     </div>
         </div>
           <div className="section2">
