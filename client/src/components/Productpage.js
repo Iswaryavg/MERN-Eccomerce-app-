@@ -1,12 +1,45 @@
-import React from "react";
-import Search from "./Search"
+import React,{useState,useEffect} from "react";
+
 import {Link} from "react-router-dom"
 
 
 function Productpage(props)
 {
- return <div><Search /><div className="products">
- {props.data.map(d=><div className="product">
+  const[search,setsearch]=useState("")
+  
+  const[filteredproduct,setfilteredproduct]=useState([])
+function handlesearch(e)
+{
+e.preventDefault();
+
+
+
+
+}
+
+function handlechange(e)
+{
+    setsearch(e.target.value)  
+ 
+   
+}
+useEffect(() => {
+  const results = props.data.filter(d =>
+    d.name.toLowerCase().includes(search)
+ 
+  
+)
+  setfilteredproduct(results);
+},[search]);
+
+
+
+ return <div>   <form onSubmit={handlesearch}  style={{textAlign:"center"}}>
+ <h1>{search}</h1>
+       <input type="search" id="gsearch" name="gsearch" vaue={search} onChange={handlechange} />
+ <button type="submit" className="btn btn-primary" onClick={handlesearch}>Search</button>
+     </form><div className="products">
+ {filteredproduct.map(d=><div className="product">
  <Link to={'/cart/' +d.id}>
       <img src={d.img} width="250px" className="productimg" alt="" />
       </Link>
@@ -21,12 +54,13 @@ function Productpage(props)
            <p>
              Number of stock:{d.Numberofstock}
              </p>
-                  {/* <button type="button" className="btn btn-lg btn-warning">Add to Cart</button>        */}
+                
                    </div> 
                   
 </div>
 
   )}
+ 
 </div>
 </div>
 

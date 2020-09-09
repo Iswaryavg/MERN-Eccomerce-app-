@@ -62,7 +62,7 @@ const result=(props.cartdata.find(x=>x.id==props.match.params.id))
     </select>
 
                 <br />
-                <Link to= {'/Addtocart/' +result.id}>               
+                <Link to= {'/Addtocart1/' +result.id}>               
                 <button className="btn btn-lg btn-warning" disabled={result.Numberofstock == 0} onClick={handlecartitems}>Add to Cart</button>
                 </Link>
             </div>

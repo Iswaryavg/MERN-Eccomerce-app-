@@ -8,8 +8,14 @@ import Productpage from "./components/Productpage"
 import Data from "../src/components/Data"
 import {BrowserRouter,Link,Route} from "react-router-dom"
 import "./App.css"
-import Addtocart from "./components/Addtocart"
+import Addtocart1 from "./components/Addtocart1"
 import Payment from "./components/Payment"
+
+// function search(props)
+// {
+//   const search={Search};
+//   console.log(props)
+// }
 function App() {
   
   return (
@@ -22,10 +28,12 @@ function App() {
  {/* <Route exact path="/products" component={Productpage } />  */}
 <Route exact path="/cart/:id" component={(props)=><Cart {...props} cartdata={Data} />} /> 
 
-<Route exact path="/products" component={(props) => <Productpage {...props} data={Data} />} /> 
+<Route exact path="/products" component={(props) => <Productpage {...props} data={Data}  />} /> 
 
-<Route exact path="/Addtocart/:id" component={(props)=><Addtocart {...props} addtocart={Data} /> }/>
-<Route exact path="/Payment" component={(props)=><Payment {...props} placeorder={Data} /> }/>
+<Route exact path="/Addtocart1/:id" component={(props)=><Addtocart1 {...props} addtocart={Data} /> }/>
+{/* <Route exact path="/Payment" component={(props)=><Payment {...props} placeorder={Data} /> }/> */}
+<Route exact path="/Payment" component={Payment   }/>
+
  <Footer />
     </div>
     </BrowserRouter>
